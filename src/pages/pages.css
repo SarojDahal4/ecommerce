@@ -1,0 +1,252 @@
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  width: 90%;
+  margin-left: 5%;
+  height: 650px;
+  padding-top: 50px;
+  background-image: url("image/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.leftHero {
+  display: flex;
+  flex-direction: column;
+  font-size: x-large;
+  margin: 0;
+  padding: 0;
+  padding-top: 30vh;
+  padding-right: 20vh;
+  line-height: 0.4;
+  color: rgb(0, 0, 0);
+}
+.leftHero button {
+  min-height: 5vh;
+  color: white;
+
+  background-color: #466a74;
+  border: 3px solid grey;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.leftHero button:hover {
+  background-color: #817777;
+}
+
+.homeContainer {
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.homeContainer h3 {
+  font-style: italic;
+  font-size: 40px;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.topTrending {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10vh;
+  justify-content: center;
+  text-align: center;
+}
+
+.trendSection img {
+  height: 250px;
+}
+.trendSection button {
+  margin-top: 1px;
+  border-radius: 0px;
+}
+
+/* --------------------------------------*--------------------------------- */
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 90px 40px 90px 90px;
+  gap: 100px;
+}
+
+.leftAbout h5 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ee3123;
+
+  color: white;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e55c52;
+}
+
+.rightAbout {
+  max-width: 50%;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .leftAbout,
+  .rightAbout {
+    max-width: 100%;
+    min-width: 200px;
+  }
+
+  .leftAbout h5 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 925px) {
+  .leftHero {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-top: 50px;
+
+    justify-content: center;
+    line-height: 0.4;
+  }
+  .leftHero h1,
+  h3 {
+    font-size: xx-large;
+  }
+}
+@media (max-width: 600px) {
+  .leftHero h1,
+  h3 {
+    font-size: large;
+  }
+  .leftHero,
+  button {
+    font-size: medium;
+  }
+}
+
+.sportDeal {
+  margin-left: 15%;
+  margin-bottom: 55px;
+  background-image: url("../assets/image/spotng.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  width: 70%;
+  height: 300px;
+  min-height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium";
+}
+.delivery {
+  margin-left: 3vh;
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 2px solid black;
+  margin-bottom: 5vh;
+  width: 95%;
+}
+.delivery button {
+  margin-left: 40%;
+
+  background-color: #ee3123;
+  max-width: 150px;
+  margin-bottom: 1vh;
+}
+
+/* Login FOrm ------------------------------------------------ */
+
+.loginForm {
+  padding-top: 35vh;
+
+  height: auto;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  text-align: none;
+  overflow-y: hidden;
+}
+Form {
+  border: 2px solid;
+  padding: 5vh;
+  border-radius: 5px;
+}
+/* Register FOrm ------------------------------------------------ */
+.registerForm {
+  padding-top: 35vh;
+
+  height: auto;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  text-align: none;
+  overflow-y: hidden;
+}
+Form {
+  border: 2px solid;
+  padding: 5vh;
+  border-radius: 5px;
+}
+.banner {
+  padding-left: 20%;
+  padding-right: 20%;
+
+  padding-top: 5vh;
+  justify-content: center;
+  text-align: center;
+}
+/* Subscribe Form------------------------------------------------ */
+.subscribeSection{
+  margin-left: 5%;
+  margin-bottom: 15px;
+  padding: 15px;
+  display: flex;
+  
+  gap: 5vh;
+  width: 90%;
+  height: 20vh;
+  border-bottom:  1px solid black;
+  
+}
+.subscribeForm input{
+
+  padding: 5px;
+  height: 50px;
+}
+.subscribeForm button {
+margin-left: 20%;
+margin-top: 10px;
+}
