@@ -1,6 +1,7 @@
 import "./pages.css";
-
+import { Link } from "react-router-dom";
 import img2 from "../assets/image/img2.jpg";
+import Footer from "../components/footer";
 
 import { Bs0Circle } from "react-icons/bs";
 import { FaArrowRight } from "react-icons/fa";
@@ -28,9 +29,11 @@ const Home = () => {
           <h1>Amazing</h1>
           <h1>Stuff Is Here</h1>
           <h3>Shop Today, get 20% off</h3>
-          <button>
-            Shop Now <Bs0Circle />
-          </button>
+          <Link to="/product">
+            <button>
+              Shop Now <Bs0Circle />
+            </button>
+          </Link>
         </div>
       </main>
       <div className="homeContainer">
@@ -41,7 +44,9 @@ const Home = () => {
               <div>{product.product_name} </div>
               <img src={product.imagepath} />
               <div>${product.price}</div>
-              <button>Shop More</button>
+              <Link to="/product">
+                <button>Shop More</button>
+              </Link>
             </div>
           ))}
         </div>
@@ -85,6 +90,7 @@ const Home = () => {
           Deliver Now <FaArrowRight />{" "}
         </button>
       </div>
+      <footer />
     </>
   );
 };

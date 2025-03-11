@@ -10,7 +10,7 @@ import Login from "./pages/login";
 import Register from "./pages/register";
 import Cart from "./pages/cart";
 import PrivateRoute from "./components/privateRoute";
-import Footer from "./components/footer";
+import Seconfooter from "./components/seconfooter";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -93,7 +93,7 @@ function App() {
           <Route path="/login" element={<Login />}></Route>
           <Route path="/register" element={<Register />}></Route>
         </Routes>
-        < Footer />
+        <Seconfooter />
       </Router>
     </>
   );
